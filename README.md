@@ -1,6 +1,4 @@
 # ATOM Business Policy Component SDK demo app for iOS
-Atom BPC (Business Policy Component) SDK demo app for iOS Applications
-# ATOM Business Policy Component SDK demo app for iOS
 
 
 This is a demo application that demonstrate how to use ****BPC SDK**** along with ****ATOM SDK****
