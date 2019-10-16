@@ -1,0 +1,513 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7C06F305235440800012259B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C06F304235440800012259B /* AppDelegate.swift */; };
+		7C06F309235440800012259B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C06F308235440800012259B /* MainViewController.swift */; };
+		7C06F30C235440800012259B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C06F30A235440800012259B /* Main.storyboard */; };
+		7C06F30E235440850012259B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C06F30D235440850012259B /* Assets.xcassets */; };
+		7C06F311235440850012259B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C06F30F235440850012259B /* LaunchScreen.storyboard */; };
+		7C06F321235445CC0012259B /* VPNManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C06F320235445CC0012259B /* VPNManager.swift */; };
+		7C06F327235445E80012259B /* AtomValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C06F323235445E80012259B /* AtomValidation.swift */; };
+		7C06F328235445E80012259B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C06F324235445E80012259B /* Constants.swift */; };
+		7C06F329235445E80012259B /* HelperMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C06F325235445E80012259B /* HelperMethods.swift */; };
+		7C06F32A235445E80012259B /* DynamicBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C06F326235445E80012259B /* DynamicBinding.swift */; };
+		7C06F32D2354460A0012259B /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C06F32C2354460A0012259B /* BaseViewModel.swift */; };
+		7C06F333235446350012259B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C06F332235446350012259B /* BaseViewController.swift */; };
+		7C476A912354C313004874DD /* VpnProtocolListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C476A902354C313004874DD /* VpnProtocolListing.swift */; };
+		7CAB5F022355C1EF00875DD4 /* PackageListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAB5F002355C1EF00875DD4 /* PackageListing.swift */; };
+		7CAB5F322356188300875DD4 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CAB5F312356188300875DD4 /* NetworkExtension.framework */; };
+		7CBEF9F52354C86F009B2A67 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBEF9F42354C86F009B2A67 /* DashboardViewModel.swift */; };
+		7CBEF9FA2354CADA009B2A67 /* CountryListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBEF9F82354CADA009B2A67 /* CountryListing.swift */; };
+		7CFB867A23546E0B00505DCC /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFB867923546E0B00505DCC /* MainViewModel.swift */; };
+		7CFB867E23546EED00505DCC /* Credentials.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CFB867D23546EED00505DCC /* Credentials.storyboard */; };
+		7CFB868023546F1600505DCC /* CredentialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFB867F23546F1600505DCC /* CredentialsViewController.swift */; };
+		7CFB868223546F3A00505DCC /* CredentialsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFB868123546F3A00505DCC /* CredentialsViewModel.swift */; };
+		7CFB868423547B4500505DCC /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CFB868323547B4500505DCC /* Dashboard.storyboard */; };
+		7CFB868823547B7E00505DCC /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFB868723547B7E00505DCC /* DashboardViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7C06F301235440800012259B /* AtomBPC Demo iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AtomBPC Demo iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C06F304235440800012259B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7C06F308235440800012259B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		7C06F30B235440800012259B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7C06F30D235440850012259B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7C06F310235440850012259B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7C06F312235440850012259B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C06F320235445CC0012259B /* VPNManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VPNManager.swift; sourceTree = "<group>"; };
+		7C06F323235445E80012259B /* AtomValidation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AtomValidation.swift; sourceTree = "<group>"; };
+		7C06F324235445E80012259B /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7C06F325235445E80012259B /* HelperMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperMethods.swift; sourceTree = "<group>"; };
+		7C06F326235445E80012259B /* DynamicBinding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicBinding.swift; sourceTree = "<group>"; };
+		7C06F32C2354460A0012259B /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		7C06F332235446350012259B /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		7C476A902354C313004874DD /* VpnProtocolListing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VpnProtocolListing.swift; sourceTree = "<group>"; };
+		7CAB5F002355C1EF00875DD4 /* PackageListing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PackageListing.swift; sourceTree = "<group>"; };
+		7CAB5F302356188300875DD4 /* AtomBPC Demo iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "AtomBPC Demo iOS.entitlements"; sourceTree = "<group>"; };
+		7CAB5F312356188300875DD4 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		7CBEF9F42354C86F009B2A67 /* DashboardViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		7CBEF9F82354CADA009B2A67 /* CountryListing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryListing.swift; sourceTree = "<group>"; };
+		7CFB867923546E0B00505DCC /* MainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		7CFB867D23546EED00505DCC /* Credentials.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Credentials.storyboard; sourceTree = "<group>"; };
+		7CFB867F23546F1600505DCC /* CredentialsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialsViewController.swift; sourceTree = "<group>"; };
+		7CFB868123546F3A00505DCC /* CredentialsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialsViewModel.swift; sourceTree = "<group>"; };
+		7CFB868323547B4500505DCC /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
+		7CFB868723547B7E00505DCC /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7C06F2FE235440800012259B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CAB5F322356188300875DD4 /* NetworkExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1068E5C2400AF7FC5BD156BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7CAB5F312356188300875DD4 /* NetworkExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7C06F2F8235440800012259B = {
+			isa = PBXGroup;
+			children = (
+				7C06F303235440800012259B /* AtomBPC Demo iOS */,
+				7C06F302235440800012259B /* Products */,
+				CA7A57BD4B2841D94E5852DE /* Pods */,
+				1068E5C2400AF7FC5BD156BF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7C06F302235440800012259B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7C06F301235440800012259B /* AtomBPC Demo iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7C06F303235440800012259B /* AtomBPC Demo iOS */ = {
+			isa = PBXGroup;
+			children = (
+				7CAB5F302356188300875DD4 /* AtomBPC Demo iOS.entitlements */,
+				7C06F334235446B80012259B /* AppDelegate */,
+				7C06F31F235445C00012259B /* VPN Manager */,
+				7C06F322235445D20012259B /* Helper */,
+				7C06F32B235445FC0012259B /* BaseClasses */,
+				7C06F337235449270012259B /* Main */,
+				7C06F335235448EA0012259B /* Credentials */,
+				7C06F336235448FF0012259B /* Dashboard */,
+				7CAB5EFF2355C1B300875DD4 /* Packages Listing */,
+				7C476A8D2354C2EB004874DD /* Protocols Listing */,
+				7CBEF9F62354CAC7009B2A67 /* Country Listing */,
+				7C06F30D235440850012259B /* Assets.xcassets */,
+				7C06F30F235440850012259B /* LaunchScreen.storyboard */,
+				7C06F312235440850012259B /* Info.plist */,
+			);
+			path = "AtomBPC Demo iOS";
+			sourceTree = "<group>";
+		};
+		7C06F31F235445C00012259B /* VPN Manager */ = {
+			isa = PBXGroup;
+			children = (
+				7C06F320235445CC0012259B /* VPNManager.swift */,
+			);
+			path = "VPN Manager";
+			sourceTree = "<group>";
+		};
+		7C06F322235445D20012259B /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				7C06F323235445E80012259B /* AtomValidation.swift */,
+				7C06F324235445E80012259B /* Constants.swift */,
+				7C06F326235445E80012259B /* DynamicBinding.swift */,
+				7C06F325235445E80012259B /* HelperMethods.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		7C06F32B235445FC0012259B /* BaseClasses */ = {
+			isa = PBXGroup;
+			children = (
+				7C06F332235446350012259B /* BaseViewController.swift */,
+				7C06F32C2354460A0012259B /* BaseViewModel.swift */,
+			);
+			path = BaseClasses;
+			sourceTree = "<group>";
+		};
+		7C06F334235446B80012259B /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				7C06F304235440800012259B /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		7C06F335235448EA0012259B /* Credentials */ = {
+			isa = PBXGroup;
+			children = (
+				7CFB867D23546EED00505DCC /* Credentials.storyboard */,
+				7CFB867F23546F1600505DCC /* CredentialsViewController.swift */,
+				7CFB868123546F3A00505DCC /* CredentialsViewModel.swift */,
+			);
+			path = Credentials;
+			sourceTree = "<group>";
+		};
+		7C06F336235448FF0012259B /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				7CFB868323547B4500505DCC /* Dashboard.storyboard */,
+				7CFB868723547B7E00505DCC /* DashboardViewController.swift */,
+				7CBEF9F42354C86F009B2A67 /* DashboardViewModel.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		7C06F337235449270012259B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				7C06F30A235440800012259B /* Main.storyboard */,
+				7CFB867923546E0B00505DCC /* MainViewModel.swift */,
+				7C06F308235440800012259B /* MainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		7C476A8D2354C2EB004874DD /* Protocols Listing */ = {
+			isa = PBXGroup;
+			children = (
+				7C476A902354C313004874DD /* VpnProtocolListing.swift */,
+			);
+			path = "Protocols Listing";
+			sourceTree = "<group>";
+		};
+		7CAB5EFF2355C1B300875DD4 /* Packages Listing */ = {
+			isa = PBXGroup;
+			children = (
+				7CAB5F002355C1EF00875DD4 /* PackageListing.swift */,
+			);
+			path = "Packages Listing";
+			sourceTree = "<group>";
+		};
+		7CBEF9F62354CAC7009B2A67 /* Country Listing */ = {
+			isa = PBXGroup;
+			children = (
+				7CBEF9F82354CADA009B2A67 /* CountryListing.swift */,
+			);
+			path = "Country Listing";
+			sourceTree = "<group>";
+		};
+		CA7A57BD4B2841D94E5852DE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7C06F300235440800012259B /* AtomBPC Demo iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C06F315235440850012259B /* Build configuration list for PBXNativeTarget "AtomBPC Demo iOS" */;
+			buildPhases = (
+				7C06F2FD235440800012259B /* Sources */,
+				7C06F2FE235440800012259B /* Frameworks */,
+				7C06F2FF235440800012259B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AtomBPC Demo iOS";
+			productName = "AtomBPC Demo iOS";
+			productReference = 7C06F301235440800012259B /* AtomBPC Demo iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7C06F2F9235440800012259B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Atom By Secure";
+				TargetAttributes = {
+					7C06F300235440800012259B = {
+						CreatedOnToolsVersion = 11.0;
+					};
+				};
+			};
+			buildConfigurationList = 7C06F2FC235440800012259B /* Build configuration list for PBXProject "AtomBPC Demo iOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7C06F2F8235440800012259B;
+			productRefGroup = 7C06F302235440800012259B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7C06F300235440800012259B /* AtomBPC Demo iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7C06F2FF235440800012259B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C06F311235440850012259B /* LaunchScreen.storyboard in Resources */,
+				7CFB868423547B4500505DCC /* Dashboard.storyboard in Resources */,
+				7C06F30E235440850012259B /* Assets.xcassets in Resources */,
+				7C06F30C235440800012259B /* Main.storyboard in Resources */,
+				7CFB867E23546EED00505DCC /* Credentials.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7C06F2FD235440800012259B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C06F333235446350012259B /* BaseViewController.swift in Sources */,
+				7CFB868023546F1600505DCC /* CredentialsViewController.swift in Sources */,
+				7CBEF9F52354C86F009B2A67 /* DashboardViewModel.swift in Sources */,
+				7C06F32A235445E80012259B /* DynamicBinding.swift in Sources */,
+				7C06F329235445E80012259B /* HelperMethods.swift in Sources */,
+				7CFB868223546F3A00505DCC /* CredentialsViewModel.swift in Sources */,
+				7C476A912354C313004874DD /* VpnProtocolListing.swift in Sources */,
+				7CBEF9FA2354CADA009B2A67 /* CountryListing.swift in Sources */,
+				7CFB867A23546E0B00505DCC /* MainViewModel.swift in Sources */,
+				7C06F321235445CC0012259B /* VPNManager.swift in Sources */,
+				7CAB5F022355C1EF00875DD4 /* PackageListing.swift in Sources */,
+				7C06F32D2354460A0012259B /* BaseViewModel.swift in Sources */,
+				7C06F327235445E80012259B /* AtomValidation.swift in Sources */,
+				7C06F309235440800012259B /* MainViewController.swift in Sources */,
+				7C06F305235440800012259B /* AppDelegate.swift in Sources */,
+				7C06F328235445E80012259B /* Constants.swift in Sources */,
+				7CFB868823547B7E00505DCC /* DashboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7C06F30A235440800012259B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7C06F30B235440800012259B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7C06F30F235440850012259B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7C06F310235440850012259B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7C06F313235440850012259B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7C06F314235440850012259B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7C06F316235440850012259B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "AtomBPC Demo iOS/AtomBPC Demo iOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4H849Z7V2K;
+				INFOPLIST_FILE = "AtomBPC Demo iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AtomBPC-Demo-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7C06F317235440850012259B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "AtomBPC Demo iOS/AtomBPC Demo iOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4H849Z7V2K;
+				INFOPLIST_FILE = "AtomBPC Demo iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AtomBPC-Demo-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7C06F2FC235440800012259B /* Build configuration list for PBXProject "AtomBPC Demo iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C06F313235440850012259B /* Debug */,
+				7C06F314235440850012259B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C06F315235440850012259B /* Build configuration list for PBXNativeTarget "AtomBPC Demo iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C06F316235440850012259B /* Debug */,
+				7C06F317235440850012259B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7C06F2F9235440800012259B /* Project object */;
+}
