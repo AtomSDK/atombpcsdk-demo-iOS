@@ -1,8 +1,8 @@
 //
-//  ViewController.swift
+//  MainViewController.swift
 //  AtomBPC Demo iOS
 //
-//  Created by Muhammad kumail on 14/10/2019.
+//  Created by AtomBPC By Secure on 14/10/2019.
 //  Copyright © 2019 Atom By Secure. All rights reserved.
 //
 

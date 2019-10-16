@@ -1,6 +1,6 @@
 //
-//  ServerListingViewModel.swift
-//  MacApp
+//  VpnProtocolListing.swift
+//  iOSApp
 //
 //  Created by AtomBPC By Secure on 30/03/2019.
 //  Copyright © 2019 AtomBPC By Secure. All rights reserved.
