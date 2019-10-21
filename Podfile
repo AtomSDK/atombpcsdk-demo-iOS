@@ -6,6 +6,6 @@ target 'AtomBPC Demo iOS' do
   use_frameworks!
 
   # Pods for AtomBPC Demo iOS
-	pod 'AtomBPC' , :podspec => '../../../AtomBPC'
+	pod 'AtomBPC'
 	pod 'AtomSDKBySecure'
 end
