@@ -15,7 +15,6 @@ import SwinjectAutoregistration
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     let dependencyContainer = Container()
-    var bpcManager : AtomBPCManager? = nil
     var window: UIWindow?
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.

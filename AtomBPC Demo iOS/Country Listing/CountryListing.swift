@@ -8,6 +8,7 @@
 
 import Foundation
 import AtomCore
+import AtomBPC
 
 class CountryListing {
     
@@ -19,7 +20,7 @@ class CountryListing {
         
         atomProtocolObj.protocol = protocolSlug
         
-        HelperMethods().appDelegate.bpcManager?.getCountriesByProtocol(protocol: atomProtocolObj, response: { (allCountries, atomException) in
+        AtomBPCManager.sharedInstance()?.getCountriesByProtocol(protocol: atomProtocolObj, response: { (allCountries, atomException) in
             self.countriesModel.removeAll()
             
             if let model = allCountries {
@@ -40,7 +41,7 @@ class CountryListing {
         atomProtocolObj.protocol = protocolSlug
         atomPackageObj.packageId = packageId
         
-        HelperMethods().appDelegate.bpcManager?.getCountriesByPackageAndProtocol(package: atomPackageObj, protocol: atomProtocolObj, response: { (countriesModel, atomException) in
+         AtomBPCManager.sharedInstance()?.getCountriesByPackageAndProtocol(package: atomPackageObj, protocol: atomProtocolObj, response: { (countriesModel, atomException) in
             self.countriesModel.removeAll()
             
             if let model = countriesModel {

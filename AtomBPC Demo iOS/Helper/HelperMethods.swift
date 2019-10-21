@@ -19,6 +19,5 @@ class HelperMethods {
         let storyBoard : UIStoryboard = UIStoryboard.init(name: destinationStoryBoard, bundle: nil)
         let viewController = storyBoard.instantiateViewController(withIdentifier: destinationStoryBoardIdentifier)
         from.navigationController?.pushViewController(viewController, animated: true)
-//        from.present(viewController, animated: true, completion: nil)
     }
 }

@@ -8,6 +8,7 @@
 
 import Foundation
 import AtomCore
+import AtomBPC
 
 class VpnProtocolListing {
     
@@ -16,7 +17,7 @@ class VpnProtocolListing {
     
     func getProtocols() {
         
-        HelperMethods().appDelegate.bpcManager?.getProtocols(response: { (allProtocols, atomExceptions) in
+         AtomBPCManager.sharedInstance()?.getProtocols(response: { (allProtocols, atomExceptions) in
             self.protocolModel.removeAll()
             if let model = allProtocols {
                 self.protocolModel = model
@@ -33,7 +34,7 @@ class VpnProtocolListing {
     func getProtocols(packageId : String)  {
         let packageObj = AtomPackages()
         packageObj.packageId = packageId
-        HelperMethods().appDelegate.bpcManager?.getProtocolsByPackage(package: packageObj, response: { (packageProtocols, atomException) in
+         AtomBPCManager.sharedInstance()?.getProtocolsByPackage(package: packageObj, response: { (packageProtocols, atomException) in
             self.protocolModel.removeAll()
             if let model = packageProtocols {
                 self.protocolModel = model

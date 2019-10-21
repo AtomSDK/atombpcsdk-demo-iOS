@@ -8,14 +8,14 @@
 
 import Foundation
 import AtomCore
-
+import AtomBPC
 class PackageListing {
     
     var packagesModel = [AtomPackages]()
     
     func getPackages()  {
         
-        HelperMethods().appDelegate.bpcManager?.getPackages(response: { (allpackages, atomException) in
+         AtomBPCManager.sharedInstance()?.getPackages(response: { (allpackages, atomException) in
             self.packagesModel.removeAll()
             if let model = allpackages {
                 self.packagesModel = model
