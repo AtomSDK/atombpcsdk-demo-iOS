@@ -78,7 +78,7 @@ AtomBPCManager.sharedInstance()?.getCountriesByPackage(package: <#package#>, res
 This function will retrieve all protocols that are associated with a particular package
 
 ``` Swift
-bpcManager?.getProtocolsByPackage(package: <#package#>, response: { (allProtocols, atomException) in
+AtomBPCManager.sharedInstance()?.getProtocolsByPackage(package: <#package#>, response: { (allProtocols, atomException) in
 //here you will get the list of protocols that associate with provided package object
 })
 ```  
